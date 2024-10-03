@@ -57,6 +57,71 @@
             margin: 0 0 20px 20px;
             max-width: 200px;
         }
+
+        /* New styles for the cards */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+
+        .container {
+            display: flex; /* Use flexbox for horizontal alignment */
+            justify-content: center; /* Center the cards */
+            gap: 20px; /* Space between cards */
+            margin-top: 40px; /* Space above the cards section */
+        }
+
+        .card {
+            width: 400px;
+            height: 600px;
+            background-color: #f4f1de;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-size: 30px;
+            color: #3d405b;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            width: 80%;
+            height: 2px;
+            background-color: #4A4A4A;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e07a5f;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #3d405b;
+            margin-bottom: 5px;
+        }
+
+        .image {
+            width: 80px;
+            height: 80px;
+            margin: 5px 0; 
+        }
+
+        .content {
+            font-size: 16px; 
+            text-align: center; 
+            margin-bottom: 10px; 
+        }
+
+        .content p {
+           margin: 5px 0; 
+       }
     </style>
 </head>
 <body>
@@ -74,47 +139,122 @@
 
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <img src="https://github.com/nicky-aigc/nicky-aigc.github.io/blob/main/curiosity-jpeg.jpg?raw=true" alt="Selfie of Curiosity and me" class="selfie">
-            <p>I am a curious learner and AI agent creator with a passion for exploring the intersection of technology and innovation. My journey in the world of AI and programming has led me to develop various projects and tools that aim to make learning and creation more accessible.</p>
-            <p>When I'm not coding or developing AI agents, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts and tutorials.</p>
-        </section>
+           <h2>About Me</h2>
+           <img src="https://github.com/nicky-aigc/nicky-aigc.github.io/blob/main/curiosity-jpeg.jpg?raw=true" alt="Selfie of Curiosity and me" class="selfie">
+           <p>I am a curious learner and AI agent creator with a passion for exploring the intersection of technology and innovation. My journey in the world of AI and programming has led me to develop various projects and tools that aim to make learning and creation more accessible.</p>
+           <p>When I'm not coding or developing AI agents, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts and tutorials.</p>
+       </section>
 
-        <section id="projects">
-            <h2>Latest Projects</h2>
-            <p>I've been investing a significant amount of time in Study Buddy projects, particularly those involving Python.</p>
+       <section id="projects">
+           <h2>Latest Projects</h2>
+           <p>I've been investing a significant amount of time in Study Buddy projects, particularly those involving Python.</p>
 
-            <h3>Python Knowledge Cards</h3>
-            <div class="project-images">
-                <img src="len.svg" alt="Python len() function card">
-                <img src="dict.svg" alt="Python dictionary card">
-                <img src="eval.svg" alt="Python eval() function card">
-                <img src="abs.svg" alt="Python abs() function card">
-            </div>
-        </section>
+           <h3>Python Knowledge Cards</h3>
+           <div class="project-images">
+               <img src="len.svg" alt="Python len() function card">
+               <img src="dict.svg" alt="Python dictionary card">
+               <img src="eval.svg" alt="Python eval() function card">
+               <img src="abs.svg" alt="Python abs() function card">
+           </div>
 
-        <section id="agents">
-            <h3>AI Agents on QingYan</h3>
-            <ol>
-                <li><a href="https://chatglm.cn/main/gdetail/66ba050ebf79f88056ba4fa5">AI-Python-For-Beginners-series</a></li>
-                <li><a href="https://chatglm.cn/main/gdetail/66c6ea549047593135d89088">Study Buddy for the course: Building Generative AI Applications with Gradio</a></li>
-                <li><a href="https://chatglm.cn/main/gdetail/66f66f89ed30d7dc6060bd26">GLM-Flash-Playground</a></li>
-                <li><a href="https://chatglm.cn/main/gdetail/66fa62d55949c92aa838247c">Python Knowledge Card Generator</a></li>
-            </ol>
-        </section>
+           <!-- New Content Section -->
+           <h3>小智解词</h3>
+           <div class="container">
+               <div class="card">
+                   <h1 class="title">小智解词 📚</h1>
+                   <div class="divider"></div>
+                   <div class="highlight">牛马</div>
+                   <div class="subtitle">niú mǎ</div>
+                   <div class="subtitle">Ox and Horse</div>
+                   <div class="subtitle">Bœuf et Cheval</div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me for collaborations, questions, or just to say hi!</p>
-            <ul>
-                <li>Email: <a href="mailto:xy.n.lau@gmail.com">xy.n.lau@gmail.com</a></li>
-                <li>GitHub: <a href="https://github.com/nicky-aigc">nicky-aigc</a></li>
-            </ul>
-        </section>
-    </main>
+                   <img src="https://raw.githubusercontent.com/nicky-aigc/nicky-aigc.github.io/refs/heads/main/xiaozhi.png" alt="Xiaozhi" class="image">
 
-    <footer>
-        <p>&copy; 2024 Nicky's Blog. All rights reserved.</p>
-    </footer>
+                   <div class="content">
+                       <p>牛马的新解:</p>
+                       <p>辛勤劳作者的象征 🏃‍♂️🐴</p>
+                       <p>生活压力下的奋斗者 💼🔥</p>
+                       <p>自嘲与无奈的混合体 🙃😔</p>
+                       <p>网络语境中的新含义 🌐💡</p>
+                   </div>
+
+                   <div class="subtitle">生活 vs 奋斗 🎯</div>
+                   <div class="subtitle">你的选择是？🤔</div>
+               </div>
+
+               <!-- Repeat the card two more times -->
+               <div class="card">
+                   <!-- Same content as above -->
+                   <h1 class="title">小智解词 📚</h1>
+                   <div class="divider"></div>
+                   <div class="highlight">对齐</div>
+                   <div class="subtitle">duì qí</div>
+                   <div class="subtitle">Alignment</div>
+                   <div class="subtitle">Alignement</div>
+
+                   <img src="https://raw.githubusercontent.com/nicky-aigc/nicky-aigc.github.io/refs/heads/main/xiaozhi.png" alt="Xiaozhi" class="image">
+
+                   <div class="content">
+                       <p>对齐的新解:</p>
+                       <p>同步信息，形成共识 🔄🤝</p>
+                       <p>职场中的高效沟通 🗣️💡</p>
+                       <p>信息对等，目标一致 🎯🔝</p>
+                       <p>促进团队协作 🤝🚀</p>
+                   </div>
+
+                   <div class="subtitle">共识 vs 误解 🔄❌</div>
+                   <div class="subtitle">你的选择是？🤔</div>
+               </div>
+
+               <!-- Third Card -->
+               <div class="card">
+                   <!-- Same content as above -->
+                   <h1 class="title">小智解词 📚</h1>
+                   <div class="divider"></div>
+                   <div class="highlight">意见领袖</div>
+                   <div class="subtitle">yì jiàn lǐng xiù</div>
+                   <div class="subtitle">Key Opinion Leader</div>
+                   <div class="subtitle">Leader d'Opinion</div>
+
+                   <img src="https://raw.githubusercontent.com/nicky-aigc/nicky-aigc.github.io/refs/heads/main/xiaozhi.png" alt="Xiaozhi" class="image">
+
+                   <div class="content">
+                       <p>意见领袖的新解:</p>
+                       <p>现代版的"先知" 📖👤</p>
+                       <p>影响力即正义 🌟🔥</p>
+                       <p>粉丝经济的"风向标" 🌬️💰</p>
+                       <p>商业与口碑的"搅拌机" 🍹📈</p>
+                   </div>
+
+                   <div class="subtitle">影响力 vs 真实性 🤔</div>
+                   <div class="subtitle">你更相信哪个？👀</div>
+               </div>
+
+           </div>
+
+       </section>
+       <section id="agents">
+        <h3>AI Agents on QingYan</h3>
+        <ol>
+            <li><a href="https://chatglm.cn/main/gdetail/66ba050ebf79f88056ba4fa5">AI-Python-For-Beginners-series</a></li>
+            <li><a href="https://chatglm.cn/main/gdetail/66c6ea549047593135d89088">Study Buddy for the course: Building Generative AI Applications with Gradio</a></li>
+            <li><a href="https://chatglm.cn/main/gdetail/66f66f89ed30d7dc6060bd26">GLM-Flash-Playground</a></li>
+            <li><a href="https://chatglm.cn/main/gdetail/66fa62d55949c92aa838247c">Python Knowledge Card Generator</a></li>
+        </ol>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for collaborations, questions, or just to say hi!</p>
+        <ul>
+            <li>Email: <a href="mailto:xy.n.lau@gmail.com">xy.n.lau@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/nicky-aigc">nicky-aigc</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Nicky's Blog. All rights reserved.</p>
+</footer>
 </body>
 </html>
