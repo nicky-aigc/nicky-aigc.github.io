@@ -1,0 +1,34 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <style>
+      .base-text { font-family: SimSun, STKaiti, KaiTi; text-anchor: middle; }
+      .title { font-size: 36px; fill: #3d405b; }
+      .subtitle { font-size: 20px; fill: #3d405b; }
+      .highlight { fill: #e07a5f; }
+      .content { font-size: 18px; }
+      .main-highlight { font-size: 28px; font-weight: bold; }
+    </style>
+  </defs>
+  <rect width="400" height="600" fill="#f4f1de" /> 
+  <text x="200" y="50" class="base-text title">小智新解热词 📚</text>
+  <line x1="40" y1="80" x2="360" y2="80" stroke="#4A4A4A" stroke-width="2" /> 
+  <text x="200" y="110" class="base-text highlight main-highlight">向上管理</text>
+  <text x="200" y="140" class="base-text subtitle">xiàng shàng guǎn lǐ</text>
+  <text x="200" y="170" class="base-text subtitle">Upward Management</text>
+  <text x="200" y="200" class="base-text subtitle">Gestion ascendante</text>
+  
+  <image href="https://sfile.chatglm.cn/chatglm4/257e56b1-35dc-42e4-a1d9-701ddaf61e58.png" x="150" y="230" width="80" height="80" />
+  
+  <text x="200" y="330" class="base-text content">
+    <tspan x="200" dy="1.3em">向上管理的新解:</tspan>
+    <tspan x="200" dy="1.3em">与上级协作的艺术 🤝</tspan>
+    <tspan x="200" dy="1.3em">促进沟通，达成共识 ✨</tspan>
+    <tspan x="200" dy="1.3em">提升团队效率 🚀</tspan>
+    <tspan x="200" dy="1.3em">职场发展的重要技能 🎓</tspan>
+    <tspan x="200" dy="1.3em">实现个人与组织目标 🎯</tspan>
+  </text>
+  
+  <text x="200" y="520" class="base-text subtitle">协作 vs 独立 🤝</text>
+  <text x="200" y="550" class="base-text subtitle">你选哪个？🤔</text>
+</svg>
