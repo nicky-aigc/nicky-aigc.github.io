@@ -1,26 +1,120 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Nicky's Blog</title>
-    </head>
-    <body>
-        <h1>Welcome to Nicky's space!</h1>
-        <img src="https://github.com/nicky-aigc/nicky-aigc.github.io/blob/main/curiosity-jpeg.jpg?raw=true" alt="Selfie of Curiosity and me" width="400" height="400">
-        <p>I am a curious learner and AI agent creator. Stay tuned for more updates!</p>
-        <h1>Latest projects</h1>
-        <p>I’ve been investing a significant amount of time in Study Buddy projects, particularly those involving Python.</p>
-        <h2>Python Knowledge Cards</h2>
-        <img src="len.svg" width="400" height="300" alt="SVG Image">
-        <img src="dict.svg" width="400" height="300" alt="SVG Image"><br>
-        <img src="eval.svg" width="400" height="300" alt="SVG Image">
-        <img src="abs.svg" width="400" height="300" alt="SVG Image"><br>
-        <h2>Some agents on QingYan</h2>
-        <ol>
-          <li><a href="https://chatglm.cn/main/gdetail/66ba050ebf79f88056ba4fa5">AI-Python-For-Beginners-series</a></li>
-          <li><a href="https://chatglm.cn/main/gdetail/66c6ea549047593135d89088">Study Buddy for the course: Building Generative AI Applications with Gradio</a></li>
-          <li><a href="https://chatglm.cn/main/gdetail/66f66f89ed30d7dc6060bd26">GLM-Flash-Playground</a></li>
-          <li><a href="https://chatglm.cn/main/gdetail/66fa62d55949c92aa838247c">Python Knowledge Card Generator</a></li>
-        </ol>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicky's Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        .project-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project-images img {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li a {
+            padding: 5px 10px;
+        }
+        .selfie {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Nicky's Space!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#agents">AI Agents</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </body>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://github.com/nicky-aigc/nicky-aigc.github.io/blob/main/curiosity-jpeg.jpg?raw=true" alt="Selfie of Curiosity and me" class="selfie">
+            <p>I am a curious learner and AI agent creator with a passion for exploring the intersection of technology and innovation. My journey in the world of AI and programming has led me to develop various projects and tools that aim to make learning and creation more accessible.</p>
+            <p>When I'm not coding or developing AI agents, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts and tutorials.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Latest Projects</h2>
+            <p>I've been investing a significant amount of time in Study Buddy projects, particularly those involving Python.</p>
+
+            <h3>Python Knowledge Cards</h3>
+            <div class="project-images">
+                <img src="len.svg" alt="Python len() function card">
+                <img src="dict.svg" alt="Python dictionary card">
+                <img src="eval.svg" alt="Python eval() function card">
+                <img src="abs.svg" alt="Python abs() function card">
+            </div>
+        </section>
+
+        <section id="agents">
+            <h3>AI Agents on QingYan</h3>
+            <ol>
+                <li><a href="https://chatglm.cn/main/gdetail/66ba050ebf79f88056ba4fa5">AI-Python-For-Beginners-series</a></li>
+                <li><a href="https://chatglm.cn/main/gdetail/66c6ea549047593135d89088">Study Buddy for the course: Building Generative AI Applications with Gradio</a></li>
+                <li><a href="https://chatglm.cn/main/gdetail/66f66f89ed30d7dc6060bd26">GLM-Flash-Playground</a></li>
+                <li><a href="https://chatglm.cn/main/gdetail/66fa62d55949c92aa838247c">Python Knowledge Card Generator</a></li>
+            </ol>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me for collaborations, questions, or just to say hi!</p>
+            <ul>
+                <li>Email: <a href="mailto:xy.n.lau@gmail.com">xy.n.lau@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/nicky-aigc">nicky-aigc</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nicky's Blog. All rights reserved.</p>
+    </footer>
+</body>
 </html>
