@@ -17,7 +17,7 @@
   <text x="200" y="140" class="base-text subtitle">Key Opinion Leader</text>
   <text x="200" y="170" class="base-text subtitle">Leader d'Opinion</text>
   
-  <image href="xiaozhi.png" x="150" y="230" width="80" height="80" />
+  <image href="https://raw.githubusercontent.com/nicky-aigc/nicky-aigc.github.io/refs/heads/main/xiaozhi.png" x="150" y="230" width="80" height="80" />
   
   <text x="200" y="330" class="base-text content">
     <tspan x="200" dy="1.3em">KOL的新解:</tspan>
