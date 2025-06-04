@@ -1,2 +1,2 @@
-# nicky-aigc.github.io
-<https://nicky-aigc.github.io/>
+# hugcosmos.github.io
+<https://hugcosmos.github.io/>
