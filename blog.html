@@ -1,0 +1,103 @@
+---
+layout: default
+---
+
+<div class="blog-section">
+    <div class="blog-header">
+        <h1>📝 Blog</h1>
+        <p>Thoughts, tutorials, and updates on AI, technology, and more</p>
+    </div>
+
+    <div class="tag-filter" id="tagFilter">
+        <button class="active" data-tag="all">All</button>
+    </div>
+
+    <div class="posts-list" id="postsList">
+        <!-- Posts will be loaded here by Jekyll -->
+        <article class="post-item">
+            <h2><a href="/2026/03/15/welcome-to-my-blog.html">Welcome to My Blog! 🎉</a></h2>
+            <div class="post-meta">
+                <span><i class="fas fa-calendar"></i> March 15, 2026</span>
+                <span><i class="fas fa-tags"></i> <span class="tag">announcement</span><span class="tag">meta</span></span>
+            </div>
+            <div class="post-excerpt">
+                This is the first post on my new blog powered by Jekyll. I'm excited to share my thoughts on AI, technology, and more!
+            </div>
+            <a href="/2026/03/15/welcome-to-my-blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="post-item">
+            <h2><a href="/2026/03/15/getting-started-with-ai-agents.html">Getting Started with AI Agents: A Beginner's Guide</a></h2>
+            <div class="post-meta">
+                <span><i class="fas fa-calendar"></i> March 15, 2026</span>
+                <span><i class="fas fa-tags"></i> <span class="tag">AI</span><span class="tag">tutorial</span><span class="tag">agents</span></span>
+            </div>
+            <div class="post-excerpt">
+                Learn the basics of AI agents, how they work, and how to build your first agent using OpenClaw.
+            </div>
+            <a href="/2026/03/15/getting-started-with-ai-agents.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="post-item">
+            <h2><a href="/2026/03/14/understanding-llms.html">Understanding LLMs: From GPT to Modern Architecture</a></h2>
+            <div class="post-meta">
+                <span><i class="fas fa-calendar"></i> March 14, 2026</span>
+                <span><i class="fas fa-tags"></i> <span class="tag">LLM</span><span class="tag">deep-learning</span><span class="tag">research</span></span>
+            </div>
+            <div class="post-excerpt">
+                A deep dive into Large Language Models, their architecture, training process, and recent breakthroughs.
+            </div>
+            <a href="/2026/03/14/understanding-llms.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </article>
+    </div>
+</div>
+
+<script>
+// Simple tag filtering (client-side only)
+document.addEventListener('DOMContentLoaded', function() {
+    const posts = document.querySelectorAll('.post-item');
+    const tagButtons = document.querySelectorAll('#tagFilter button');
+
+    // Collect all unique tags
+    const allTags = new Set();
+    posts.forEach(post => {
+        const tags = post.querySelectorAll('.tag');
+        tags.forEach(tag => allTags.add(tag.textContent.trim()));
+    });
+
+    // Create tag filter buttons
+    allTags.forEach(tag => {
+        if (tag) {
+            const button = document.createElement('button');
+            button.textContent = tag;
+            button.dataset.tag = tag;
+            document.getElementById('tagFilter').appendChild(button);
+        }
+    });
+
+    // Filter posts
+    tagButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            tagButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+
+            const selectedTag = this.dataset.tag;
+
+            posts.forEach(post => {
+                if (selectedTag === 'all') {
+                    post.style.display = 'block';
+                } else {
+                    const tags = post.querySelectorAll('.tag');
+                    let hasTag = false;
+                    tags.forEach(t => {
+                        if (t.textContent.trim() === selectedTag) {
+                            hasTag = true;
+                        }
+                    });
+                    post.style.display = hasTag ? 'block' : 'none';
+                }
+            });
+        });
+    });
+});
+</script>

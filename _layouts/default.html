@@ -6,7 +6,7 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    {% if page.name == "blog-index.html" %}
+    {% if page.name == "blog.html" %}
     <style>
         .blog-section {
             max-width: 900px;
@@ -154,7 +154,7 @@
         <div class="container">
             <ul>
                 <li><a href="{{ site.baseurl }}/" {% if page.layout == 'home' %}class="active"{% endif %}>Home</a></li>
-                <li><a href="{{ site.baseurl }}/blog-index.html" {% if page.name == 'blog-index.html' %}class="active"{% endif %}>Blog</a></li>
+                <li><a href="{{ site.baseurl }}/blog.html" {% if page.name == 'blog.html' %}class="active"{% endif %}>Blog</a></li>
                 <li><a href="{{ site.baseurl }}/ai-agents.html" {% if page.name == 'ai-agents.html' %}class="active"{% endif %}>AI Agents</a></li>
                 <li><a href="{{ site.baseurl }}/projects.html" {% if page.name == 'projects.html' %}class="active"{% endif %}>Projects</a></li>
                 <li><a href="{{ site.baseurl }}/about.html" {% if page.name == 'about.html' %}class="active"{% endif %}>About Me</a></li>
