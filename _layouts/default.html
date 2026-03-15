@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    {% if page.name == "blog.html" %}
+    <style>
+        .blog-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .blog-header h1 {
+            font-size: 2.5em;
+            color: #4a148c;
+            margin-bottom: 15px;
+        }
+
+        .blog-header p {
+            color: #7b1fa2;
+            font-size: 1.1em;
+        }
+
+        .posts-list {
+            list-style: none;
+        }
+
+        .post-item {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(74, 20, 140, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid rgba(123, 31, 162, 0.1);
+        }
+
+        .post-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(123, 31, 162, 0.2);
+        }
+
+        .post-item h2 {
+            margin-bottom: 15px;
+        }
+
+        .post-item h2 a {
+            color: #1a1a2e;
+            text-decoration: none;
+            font-size: 1.8em;
+            transition: color 0.3s;
+        }
+
+        .post-item h2 a:hover {
+            color: #7b1fa2;
+        }
+
+        .post-meta {
+            color: #7b1fa2;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .post-meta span {
+            margin-right: 20px;
+        }
+
+        .post-meta i {
+            margin-right: 5px;
+        }
+
+        .post-excerpt {
+            color: #4a4a68;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .post-tags {
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #7b1fa2 0%, #9c4dcc 100%);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .tag:hover {
+            background: linear-gradient(135deg, #9c4dcc 0%, #e040fb 100%);
+            transform: translateY(-2px);
+        }
+
+        .read-more {
+            display: inline-block;
+            background: linear-gradient(135deg, #7b1fa2 0%, #e040fb 100%);
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(123, 31, 162, 0.4);
+        }
+
+        .read-more:hover {
+            background: linear-gradient(135deg, #9c4dcc 0%, #e040fb 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(123, 31, 162, 0.6);
+        }
+
+        .tag-filter {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .tag-filter button {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid #7b1fa2;
+            color: #7b1fa2;
+            padding: 8px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tag-filter button:hover,
+        .tag-filter button.active {
+            background: linear-gradient(135deg, #7b1fa2 0%, #9c4dcc 100%);
+            color: white;
+            border-color: transparent;
+        }
+    </style>
+    {% endif %}
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Curiosity's Space</h1>
+            <p>Explore my projects, interests, and collections of AI agents</p>
+            <div class="header-buttons">
+                <a href="#main-content" class="header-btn">Explore</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="{{ site.baseurl }}/" {% if page.layout == 'home' %}class="active"{% endif %}>Home</a></li>
+                <li><a href="{{ site.baseurl }}/blog.html" {% if page.name == 'blog.html' %}class="active"{% endif %}>Blog</a></li>
+                <li><a href="{{ site.baseurl }}/ai-agents.html" {% if page.name == 'ai-agents.html' %}class="active"{% endif %}>AI Agents</a></li>
+                <li><a href="{{ site.baseurl }}/projects.html" {% if page.name == 'projects.html' %}class="active"{% endif %}>Projects</a></li>
+                <li><a href="{{ site.baseurl }}/about.html" {% if page.name == 'about.html' %}class="active"{% endif %}>About Me</a></li>
+                <li><a href="{{ site.baseurl }}/contact.html" {% if page.name == 'contact.html' %}class="active"{% endif %}>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        {{ content }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="copyright">&copy; 2025 Curiosity's Space. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/nicky-aigc" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:hugcosmos@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
