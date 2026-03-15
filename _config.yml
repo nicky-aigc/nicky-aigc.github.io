@@ -3,26 +3,4 @@ description: Bookmark this to keep an eye on my project updates!
 baseurl: ""
 url: "https://hugcosmos.github.io"
 
-# Build settings
 markdown: kramdown
-highlighter: rouge
-permalink: /:categories/:title/
-
-# Exclude from processing
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
