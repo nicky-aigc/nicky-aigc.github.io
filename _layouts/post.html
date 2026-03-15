@@ -1,0 +1,204 @@
+---
+layout: default
+---
+
+<article class="post">
+    <div class="container">
+        <div class="post-header">
+            <h1>{{ page.title }}</h1>
+            <div class="post-meta">
+                <span class="post-date"><i class="fas fa-calendar"></i> {{ page.date | date: "%B %d, %Y" }}</span>
+                {% if page.tags %}
+                <span class="post-tags"><i class="fas fa-tags"></i>
+                    {% for tag in page.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </span>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="post-content">
+            {{ content }}
+        </div>
+
+        <div class="post-navigation">
+            {% if page.previous %}
+            <a class="prev-post" href="{{ page.previous.url }}">
+                <i class="fas fa-arrow-left"></i> {{ page.previous.title }}
+            </a>
+            {% endif %}
+            {% if page.next %}
+            <a class="next-post" href="{{ page.next.url }}">
+                {{ page.next.title }} <i class="fas fa-arrow-right"></i>
+            </a>
+            {% endif %}
+        </div>
+
+        <!-- Giscus Comments -->
+        <div class="comments-section">
+            <script src="https://giscus.app/client.js"
+                data-repo="hugcosmos/hugcosmos.github.io"
+                data-repo-id="R_kgDONZxxxx"
+                data-category="Announcements"
+                data-category-id="DIC_kwDONZxxxx"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="light"
+                data-lang="en"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </div>
+    </div>
+</article>
+
+<style>
+.post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.post-header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.post-meta {
+    color: #7f8c8d;
+    font-size: 0.95em;
+}
+
+.post-meta span {
+    margin: 0 10px;
+}
+
+.post-meta i {
+    margin-right: 5px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #4a93d8;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    margin: 0 3px;
+}
+
+.post-content {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #34495e;
+}
+
+.post-content h2 {
+    color: #2c3e50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.post-content h3 {
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+.post-content ul, .post-content ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.post-content li {
+    margin-bottom: 10px;
+}
+
+.post-content code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+.post-content pre {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.post-content pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+.post-content blockquote {
+    border-left: 4px solid #4a93d8;
+    padding-left: 20px;
+    margin: 20px 0;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid #ecf0f1;
+}
+
+.post-navigation a {
+    flex: 1;
+    padding: 15px 20px;
+    background-color: #4a93d8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.post-navigation a:hover {
+    background-color: #3498db;
+}
+
+.prev-post {
+    text-align: left;
+}
+
+.next-post {
+    text-align: right;
+}
+
+.comments-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid #ecf0f1;
+}
+</style>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    {% if page.name == "blog.html" %}
+    <style>
+        .blog-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .blog-header h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .blog-header p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+
+        .posts-list {
+            list-style: none;
+        }
+
+        .post-item {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .post-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-item h2 {
+            margin-bottom: 15px;
+        }
+
+        .post-item h2 a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 1.8em;
+        }
+
+        .post-item h2 a:hover {
+            color: #4a93d8;
+        }
+
+        .post-meta {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .post-meta span {
+            margin-right: 20px;
+        }
+
+        .post-meta i {
+            margin-right: 5px;
+        }
+
+        .post-excerpt {
+            color: #34495e;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .post-tags {
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #4a93d8;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            text-decoration: none;
+        }
+
+        .tag:hover {
+            background-color: #3498db;
+        }
+
+        .read-more {
+            display: inline-block;
+            background-color: #4a93d8;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .read-more:hover {
+            background-color: #3498db;
+        }
+
+        .tag-filter {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .tag-filter button {
+            background: none;
+            border: 2px solid #4a93d8;
+            color: #4a93d8;
+            padding: 8px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tag-filter button:hover,
+        .tag-filter button.active {
+            background-color: #4a93d8;
+            color: white;
+        }
+    </style>
+    {% endif %}
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Curiosity's Space</h1>
+            <p>Explore my projects, interests, and collections of AI agents</p>
+            <div class="header-buttons">
+                <a href="#main-content" class="header-btn">Explore</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="{{ site.baseurl }}/" {% if page.layout == 'home' %}class="active"{% endif %}>Home</a></li>
+                <li><a href="{{ site.baseurl }}/blog.html" {% if page.name == 'blog.html' %}class="active"{% endif %}>Blog</a></li>
+                <li><a href="{{ site.baseurl }}/ai-agents.html" {% if page.name == 'ai-agents.html' %}class="active"{% endif %}>AI Agents</a></li>
+                <li><a href="{{ site.baseurl }}/projects.html" {% if page.name == 'projects.html' %}class="active"{% endif %}>Projects</a></li>
+                <li><a href="{{ site.baseurl }}/about.html" {% if page.name == 'about.html' %}class="active"{% endif %}>About Me</a></li>
+                <li><a href="{{ site.baseurl }}/contact.html" {% if page.name == 'contact.html' %}class="active"{% endif %}>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        {{ content }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="copyright">&copy; 2025 Curiosity's Space. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/nicky-aigc" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:hugcosmos@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
