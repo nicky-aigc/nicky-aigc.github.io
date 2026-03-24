@@ -164,6 +164,11 @@
                 <li><a href="{{ site.baseurl }}/projects.html" {% if page.name == 'projects.html' %}class="active"{% endif %}>Projects</a></li>
                 <li><a href="{{ site.baseurl }}/about.html" {% if page.name == 'about.html' %}class="active"{% endif %}>About Me</a></li>
                 <li><a href="{{ site.baseurl }}/contact.html" {% if page.name == 'contact.html' %}class="active"{% endif %}>Contact</a></li>
+                {% if page.lang == 'zh' %}
+                <li class="lang-switch-nav"><a href="{{ site.baseurl }}/">English</a></li>
+                {% else %}
+                <li class="lang-switch-nav"><a href="{{ site.baseurl }}/index.zh.html">中文</a></li>
+                {% endif %}
             </ul>
         </div>
     </nav>
