@@ -1,117 +1,117 @@
 ---
 layout: post
-title: "Scripts to Audiobook: An AI Coding Journey"
+title: "Scripts to Audiobook：一段 AI 编码之旅"
 date: 2026-03-20 00:00:00 +0800
 tags: [AI, typescript, audiobook, open-source, development]
-excerpt: "A personal passion project born from my love for movies and audiobooks. Built in ~5 days across a weekend with three different AI coding assistants."
+excerpt: "源于我对电影和有声书的热爱，周末用三个不同的 AI 编码助手在约 5 天内完成的项目。"
 ---
 
-# Scripts to Audiobook: An AI Coding Journey 🎧
+# Scripts to Audiobook：一段 AI 编码之旅 🎧
 
-I'm a movie buff and an avid audiobook consumer. For a while, I'd been thinking: **what if I could automatically generate personalized audiobooks from AI-generated scripts?**
+我是个电影迷，也是有声书的重度消费者。有段时间我一直在想：**能不能从 AI 生成的脚本自动生成个性化的有声书？**
 
-That personal itch led to my latest project: **Scripts to Audiobook** — a tool to convert scripts into multi-voice audiobooks with configurable TTS providers.
+这个个人想法催生了我的最新项目：**Scripts to Audiobook** — 一个将脚本转换为多声音有声书的工具，支持可配置的 TTS 供应商。
 
-I started building on March 15th and shipped by the early hours of March 20th. In those ~5 days (including a weekend), I cycled through three AI coding assistants. Here's what happened.
+我在 3 月 15 日开始构建，3 月 20 日凌晨发布。在这约 5 天里（包括一个周末），我先后使用了三个 AI 编码助手。以下是发生的事情。
 
-## The Starting Point: Perplexity Computer Use
+## 起点：Perplexity Computer Use
 
-I started with **Perplexity's Computer Use** feature, drawn by its promise of "high completion rates" and impressive real-time preview capabilities. As a Pro subscriber (4,500 credits), I gave it a serious shot — running from 3,400+ credits down to 2,200+ before pausing.
+我从 **Perplexity 的 Computer Use** 功能开始，被它"高完成率"的承诺和令人印象深刻的实时预览能力所吸引。作为 Pro 订阅者（4,500 积分），我认真尝试了它 — 积分从 3,400+ 掉到 2,200+ 后暂停。
 
-My experience was mixed:
+我的体验褒贬不一：
 
-**What worked:**
-- **Real-time preview** — Seeing changes instantly was incredibly valuable
-- **Interactive development** — The conversational flow felt natural and efficient
-- **Quick prototyping** — Great for testing ideas and rapid iteration
+**有效的部分：**
+- **实时预览** — 即时看到变化非常有价值
+- **交互式开发** — 对话流程感觉自然高效
+- **快速原型** — 非常适合测试想法和快速迭代
 
-**What didn't:**
-- **Credits burn fast** — 1,200+ credits for partial completion adds up
-- **Completion gap** — The AI tended to "brand" things aggressively (naming after itself), which required manual cleanup
-- **Production readiness** — While impressive for demos, the output needed significant polish for real use
+**无效的部分：**
+- **积分消耗快** — 1,200+ 积分换取部分完成度，成本很高
+- **完成度差距** — AI 倾向于激进地"品牌化"（以自己命名），需要手动清理
+- **生产就绪度** — 虽然演示令人印象深刻，但输出需要大量打磨才能实际使用
 
-I stopped not because it couldn't do the job, but because the credits cost for full completion wasn't worth it given the current state. It's a fantastic tool for exploration and demos, but I'd save it for smaller projects or validation phases.
+我停止不是因为无法完成工作，而是鉴于当前状态，完成全部的积分成本不值得。它是探索和演示的绝佳工具，但我会把它留给小项目或验证阶段。
 
-## Phase Two: Kimi Code & Token Burn
+## 第二阶段：Kimi Code 和 Token 燃烧
 
-I switched to **Kimi Code**, hoping its focused approach would be more effective. It worked — and I burned through two weekly quotas in rapid succession.
+我切换到 **Kimi Code**，希望其专注的方法会更有效。确实有效 — 我快速用光了两个周配额。
 
-Here's what happened: I'd exhaust my quota, it would reset, and I'd burn through it again. Partly because I was working intensely over a weekend, but mostly because:
+发生的事情是：我的配额耗尽，它重置，我又快速用完。部分是因为我在周末高强度工作，但主要是因为：
 
-1. **Scope creep** — Requirements evolved mid-build (new TTS providers, audio format options, chapter support)
-2. **Refactor cycles** — Fixing bugs led to more bugs, leading to repeated rewrites
-3. **Context loss** — Starting fresh sessions meant re‑explaining the project each time
+1. **范围蔓延** — 构建中途需求发生变化（新的 TTS 供应商、音频格式选项、章节支持）
+2. **重构循环** — 修复 bug 导致更多 bug，反复重写
+3. **上下文丢失** — 开始新会话意味着每次都要重新解释项目
 
-The tool itself was capable, but the workflow was inefficient. I was trading time for tokens.
+工具本身是能干的，但工作流程低效。我在用时间换 token。
 
-## Phase Three: Claude Code & The Finish Line
+## 第三阶段：Claude Code 和终点线
 
-Finally, I switched to **Claude Code** (Anthropic's terminal-based coding agent). Three things made it click:
+最后，我切换到 **Claude Code**（Anthropic 的终端编码代理）。三件事让它奏效了：
 
-1. **Rich project context** — It could read the entire codebase and understand the architecture
-2. **Iterative refinement** — Small, targeted changes instead of wholesale rewrites
-3. **Stability** — What worked yesterday kept working today
+1. **丰富的项目上下文** — 它可以阅读整个代码库并理解架构
+2. **迭代优化** — 小而针对性更改，而不是全面重写
+3. **稳定性** — 昨天能用的今天继续能用
 
-In one focused session, I:
-- Implemented the remaining features (chapter support, TTS switching)
-- Fixed all outstanding bugs
-- Polished the UI and documentation
-- Wrote comprehensive tests
+在一次专注的会话中，我：
+- 实现了剩余功能（章节支持、TTS 切换）
+- 修复了所有未解决的 bug
+- 打磨了 UI 和文档
+- 编写了全面的测试
 
-**The difference?** It felt like working with a senior engineer who understood the big picture.
+**区别在哪？** 感觉像和一位理解大局的高级工程师一起工作。
 
-## The Output: What I Built
+## 输出：我构建了什么
 
-After all that, here's what I built:
+经过这一切，这是我构建的：
 
-**Scripts to Audiobook** converts structured scripts into multi-voice audiobooks using your choice of TTS provider.
+**Scripts to Audiobook** 使用你选择的 TTS 供应商将结构化脚本转换为多声音有声书。
 
-### Key Features
+### 核心功能
 
-- 🎭 **Multiple voices** — Assign different voices to each character
-- 📖 **Chapter support** — Organize long content into sections
-- 🔧 **TTS flexibility** — Switch between providers (Edge TTS, OpenAI, ElevenLabs, etc.)
-- 🎛️ **Configurable output** — Control audio format, bitrate, and speed
+- 🎭 **多种声音** — 为每个角色分配不同的声音
+- 📖 **章节支持** — 将长内容组织成部分
+- 🔧 **TTS 灵活性** — 在供应商之间切换（Edge TTS、OpenAI、ElevenLabs 等）
+- 🎛️ **可配置输出** — 控制音频格式、比特率和速度
 
-### What Makes It Special
+### 独特之处
 
-- **Free to use** — Edge TTS requires no API key; other providers offer free tiers
-- **AI-agnostic** — Works with scripts from any AI (Claude, GPT, Gemini, etc.)
-- **Beginner-friendly UI** — Simple configuration interface, no coding required
+- **免费使用** — Edge TTS 不需要 API 密钥；其他供应商提供免费层
+- **AI 无关** — 适用于来自任何 AI 的脚本（Claude、GPT、Gemini 等）
+- **新手友好 UI** — 简单的配置界面，无需编码
 
-## Tech Stack
+## 技术栈
 
-- **TypeScript** — Type safety and better DX
-- **Node.js** — Cross‑platform runtime
-- **Edge TTS / OpenAI / ElevenLabs** — TTS providers
-- **FFmpeg** — Audio processing and format conversion
+- **TypeScript** — 类型安全和更好的 DX
+- **Node.js** — 跨平台运行时
+- **Edge TTS / OpenAI / ElevenLabs** — TTS 供应商
+- **FFmpeg** — 音频处理和格式转换
 
-## Key Learnings
+## 关键经验
 
-1. **Tool choice matters** — Different AI coding assistants have different strengths. Match the tool to the phase.
-2. **Token efficiency** — Rich context and iterative refinement beat brute‑force rewriting.
-3. **Ship fast, iterate** — The first version doesn't need to be perfect. It just needs to work.
+1. **工具选择很重要** — 不同的 AI 编码助手有不同的优势。匹配工具到阶段。
+2. **Token 效率** — 丰富的上下文和迭代优化胜过蛮力重写。
+3. **快速发布，迭代** — 第一版本不需要完美。它只需要能工作。
 
-## The Beauty of AI-Augmented Coding
+## AI 增强编码之美
 
-This entire project — from idea to shipped product — took **less than 5 days**. And I'm not a professional developer.
+整个项目 — 从想法到发布产品 — 花了**不到 5 天**。而我不是专业开发者。
 
-The beauty isn't in getting it perfect the first time — it's in the ability to iterate rapidly, learn from mistakes, and keep moving forward.
+美不在于第一次就完美 — 而在于能够快速迭代、从错误中学习、继续前进。
 
-AI coding assistants aren't replacements for human judgment. They're force multipliers. They help you move faster, think bigger, and ship smarter.
+AI 编码助手不是人类判断的替代品。它们是力量倍增器。它们帮助你移动得更快、思考更大、发布更聪明。
 
-## What's Next?
+## 后续计划
 
-I'm already thinking about v2:
-- Web UI for easier configuration
-- More TTS providers (Azure, Google, Amazon)
-- Voice cloning support
-- Batch processing for multiple scripts
+我已经考虑 v2：
+- 更容易配置的 Web UI
+- 更多 TTS 供应商（Azure、Google、Amazon）
+- 声音克隆支持
+- 多脚本批处理
 
-But first, I'm taking a break. Shipping feels good. 😊
+但首先，我要休息一下。发布的感觉很好。😊
 
 ---
 
-**Check it out on GitHub:** [scripts-to-audiobook](https://github.com/hugcosmos/scripts-to-audiobook)
+**在 GitHub 上查看：** [scripts-to-audiobook](https://github.com/hugcosmos/scripts-to-audiobook)
 
-*Have questions or feedback? Reach out on [Twitter](https://twitter.com/hugcosmos) or [GitHub Discussions](https://github.com/hugcosmos/scripts-to-audiobook/discussions).*
+*有问题或反馈？在 [Twitter](https://twitter.com/hugcosmos) 或 [GitHub Discussions](https://github.com/hugcosmos/scripts-to-audiobook/discussions) 上联系。*

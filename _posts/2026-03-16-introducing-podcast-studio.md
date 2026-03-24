@@ -1,77 +1,77 @@
 ---
 layout: post
-title: "Introducing Podcast Studio: AI-Powered Podcast Generation"
+title: "Podcast Studio：AI驱动的播客生成工具"
 date: 2026-03-16 00:00:00 +0800
 tags: [AI, podcast, typescript, open-source]
-excerpt: "Turn any topic into a multi-speaker, news-grounded podcast episode with natural conversations and lifelike voices."
+excerpt: "将任何话题转化为多说话人、基于真实新闻的播客节目，具有自然对话和逼真声音。"
 ---
 
-# Introducing Podcast Studio: AI-Powered Podcast Generation 🎙️
+# Podcast Studio：AI驱动的播客生成工具 🎙️
 
-I'm excited to announce **Podcast Studio**, an AI-powered tool that transforms any topic into engaging, multi-speaker podcast episodes.
+很高兴宣布 **Podcast Studio** — 一个 AI 驱动的工具，可以将任何话题转化为引人入胜的多说话人播客节目。
 
-## What It Does
+## 它能做什么
 
-Podcast Studio generates:
-- **Multi-speaker conversations** between 2-4 hosts with distinct voices
-- **News-grounded content** using real-time web search for current events
-- **Natural dialogue** with realistic transitions and conversational flow
-- **Lifelike audio** using text-to-speech synthesis (no API keys needed)
+Podcast Studio 可以生成：
+- **多说话人对话** — 2-4 位主持人，各自独特的声音
+- **基于新闻的内容** — 使用实时网络搜索获取时事信息
+- **自然对话** — 真实的过渡和对话流畅度
+- **逼真音频** — 使用文本转语音合成（无需 API 密钥）
 
-## How It Works
+## 工作原理
 
-1. **Input your topic** — Any subject you want to explore
-2. **AI research** — The system searches for recent news and information
-3. **Script generation** — Creates a natural conversation outline
-4. **Audio synthesis** — Converts the script to speech with multiple voices
+1. **输入你的话题** — 任何你想探索的主题
+2. **AI 研究** — 系统搜索最新的新闻和信息
+3. **脚本生成** — 创建自然的对话大纲
+4. **音频合成** — 将脚本转换为多声音语音
 
-## Key Features
+## 核心功能
 
-- 🎭 **Multiple voice profiles** — Each host has a distinct voice
-- 🔍 **Real-time research** — Incorporates current events and facts
-- 🎙️ **Natural dialogue** — Conversations flow naturally with interruptions and reactions
-- 🔊 **High-quality audio** — Uses Edge TTS for free, unlimited speech synthesis
-- 📱 **Easy to use** — Simple CLI interface
+- 🎭 **多种声音配置** — 每位主持人都有独特的声音
+- 🔍 **实时研究** — 整合时事和事实
+- 🎙️ **自然对话** — 对话流畅自然，包含打断和反应
+- 🔊 **高质量音频** — 使用 Edge TTS 实现免费、无限的语音合成
+- 📱 **易于使用** — 简单的命令行界面
 
-## Tech Stack
+## 技术栈
 
-- **TypeScript** — Type-safe development
-- **Node.js** — Cross-platform runtime
-- **Edge TTS** — Free text-to-speech synthesis
-- **Web search APIs** — Real-time information gathering
+- **TypeScript** — 类型安全开发
+- **Node.js** — 跨平台运行时
+- **Edge TTS** — 免费文本转语音合成
+- **Web 搜索 APIs** — 实时信息收集
 
-## Use Cases
+## 使用场景
 
-- Educational content creation
-- News summarization
-- Explaining complex topics
-- Entertainment and storytelling
-- Language learning materials
+- 教育内容创作
+- 新闻摘要
+- 解释复杂话题
+- 娱乐和故事讲述
+- 语言学习材料
 
-## Get Started
+## 快速开始
 
 ```bash
 npm install -g podcast-studio
-podcast-studio "The future of renewable energy"
+podcast-studio "可再生能源的未来"
 ```
 
-## What's Next
+## 后续计划
 
-I'm planning to add:
-- Custom voice cloning
-- More voice options
-- Video generation
-- Multi-language support
+我计划添加：
+- 自定义声音克隆
+- 更多声音选项
+- 视频生成
+- 多语言支持
 - Web UI
 
-## Open Source
+## 开源
 
-Podcast Studio is completely open source. Check it out on GitHub:
+Podcast Studio 完全开源。在 GitHub 上查看：
 
 [github.com/hugcosmos/podcast-studio](https://github.com/hugcosmos/podcast-studio)
 
 ---
 
-**Ready to create your first AI-generated podcast?** 
+**准备好创建你的第一个 AI 生成播客了吗？**
 
-Install it today and turn your ideas into engaging audio content!
+今天就安装它，把你的想法转化为引人入胜的音频内容！
