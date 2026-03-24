@@ -4,6 +4,8 @@ title: "Scripts to Audiobook：一段 AI 编码之旅"
 date: 2026-03-20 00:00:00 +0800
 tags: [AI, typescript, audiobook, open-source, development]
 excerpt: "源于我对电影和有声书的热爱，周末用三个不同的 AI 编码助手在约 5 天内完成的项目。"
+lang: zh
+slug: scripts-to-audiobook-journey
 ---
 
 # Scripts to Audiobook：一段 AI 编码之旅 🎧

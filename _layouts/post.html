@@ -15,6 +15,13 @@ layout: default
                     {% endfor %}
                 </span>
                 {% endif %}
+                {% if page.slug %}
+                <span class="lang-switch">
+                    <a href="/blog/{{ page.slug }}" class="lang-link {% if page.lang == 'en' %}active{% endif %}">English</a>
+                    <span class="separator">|</span>
+                    <a href="/blog/zh/{{ page.slug }}" class="lang-link {% if page.lang == 'zh' %}active{% endif %}">中文</a>
+                </span>
+                {% endif %}
             </div>
         </div>
 
@@ -95,6 +102,36 @@ layout: default
     border-radius: 15px;
     font-size: 0.85em;
     margin: 0 3px;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.lang-link {
+    color: #7b1fa2;
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+}
+
+.lang-link:hover {
+    background: rgba(123, 31, 162, 0.1);
+}
+
+.lang-link.active {
+    background: linear-gradient(135deg, #7b1fa2 0%, #9c4dcc 100%);
+    color: white;
+    font-weight: 500;
+}
+
+.separator {
+    margin: 0 5px;
+    color: #7b1fa2;
 }
 
 .post-content {
