@@ -1,16 +1,16 @@
 ---
 layout: default
-lang: en
+lang: zh
 ---
 
 <div class="blog-section">
     <div class="blog-header">
-        <h1>📝 Blog</h1>
-        <p>Thoughts, tutorials, and updates on AI, technology, and more</p>
+        <h1>📝 博客</h1>
+        <p>关于 AI、技术等的思考、教程和更新</p>
     </div>
 
     <div class="tag-filter" id="tagFilter">
-        <button class="active" data-tag="all">All</button>
+        <button class="active" data-tag="all">全部</button>
     </div>
 
     <div class="posts-list" id="postsList">
@@ -18,7 +18,7 @@ lang: en
         <article class="post-item">
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <div class="post-meta">
-                <span><i class="fas fa-calendar"></i> {{ post.date | date: "%B %d, %Y" }}</span>
+                <span><i class="fas fa-calendar"></i> {{ post.date | date: "%Y年%m月%d日" }}</span>
                 <span><i class="fas fa-tags"></i>
                     {% for tag in post.tags %}
                     <span class="tag">{{ tag }}</span>
@@ -28,26 +28,26 @@ lang: en
             <div class="post-excerpt">
                 {{ post.excerpt }}
             </div>
-            <a href="{{ post.url }}" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="{{ post.url }}" class="read-more">阅读更多 <i class="fas fa-arrow-right"></i></a>
         </article>
         {% endfor %}
     </div>
 </div>
 
 <script>
-// Simple tag filtering (client-side only)
+// 简单的标签过滤（仅客户端）
 document.addEventListener('DOMContentLoaded', function() {
     const posts = document.querySelectorAll('.post-item');
     const tagButtons = document.querySelectorAll('#tagFilter button');
 
-    // Collect all unique tags
+    // 收集所有唯一标签
     const allTags = new Set();
     posts.forEach(post => {
         const tags = post.querySelectorAll('.tag');
         tags.forEach(tag => allTags.add(tag.textContent.trim()));
     });
 
-    // Create tag filter buttons
+    // 创建标签过滤按钮
     allTags.forEach(tag => {
         if (tag) {
             const button = document.createElement('button');
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Filter posts
+    // 过滤文章
     tagButtons.forEach(button => {
         button.addEventListener('click', function() {
             tagButtons.forEach(btn => btn.classList.remove('active'));
