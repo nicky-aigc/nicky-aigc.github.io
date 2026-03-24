@@ -6,6 +6,7 @@ tags: [AI, typescript, audiobook, open-source, development]
 excerpt: "A personal passion project born from my love for movies and audiobooks. Built in ~5 days across a weekend with three different AI coding assistants."
 lang: en
 slug: scripts-to-audiobook-journey
+permalink: /blog/scripts-to-audiobook-journey
 ---
 
 # Scripts to Audiobook: An AI Coding Journey 🎧

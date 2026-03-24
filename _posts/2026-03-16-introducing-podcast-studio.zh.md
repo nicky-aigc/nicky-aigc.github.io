@@ -6,6 +6,7 @@ tags: [AI, podcast, typescript, open-source]
 excerpt: "将任何话题转化为多说话人、基于真实新闻的播客节目，具有自然对话和逼真声音。"
 lang: zh
 slug: introducing-podcast-studio
+permalink: /blog/zh/introducing-podcast-studio
 ---
 
 # Podcast Studio：AI驱动的播客生成工具 🎙️

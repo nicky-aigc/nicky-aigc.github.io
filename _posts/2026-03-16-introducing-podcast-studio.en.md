@@ -6,6 +6,7 @@ tags: [AI, podcast, typescript, open-source]
 excerpt: "Turn any topic into a multi-speaker, news-grounded podcast episode with natural conversations and lifelike voices."
 lang: en
 slug: introducing-podcast-studio
+permalink: /blog/introducing-podcast-studio
 ---
 
 # Introducing Podcast Studio: AI-Powered Podcast Generation 🎙️
