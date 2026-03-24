@@ -4,6 +4,9 @@ title: "SceneLine：AI驱动的配音练习平台"
 date: 2026-03-25 00:00:00 +0800
 tags: [AI, TTS, ASR, react, typescript, open-source]
 excerpt: "通过影视场景对话进行沉浸式配音训练，支持实时语音识别、智能评分和40+种声音合成。"
+lang: zh
+slug: sceneline-dubbing-practice-platform
+permalink: /blog/zh/sceneline-dubbing-practice-platform
 ---
 
 # SceneLine：AI驱动的配音练习平台 🎬
