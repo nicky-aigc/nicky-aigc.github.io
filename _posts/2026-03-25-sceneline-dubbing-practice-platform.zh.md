@@ -6,7 +6,7 @@ tags: [AI, TTS, ASR, react, typescript, open-source]
 excerpt: "通过影视场景对话进行沉浸式配音训练，支持实时语音识别、智能评分和40+种声音合成。"
 lang: zh
 slug: sceneline-dubbing-practice-platform
-permalink: /blog/zh/sceneline-dubbing-practice-platform
+permalink: /blog/sceneline-dubbing-practice-platform
 ---
 
 # SceneLine：AI驱动的配音练习平台 🎬
