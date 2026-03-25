@@ -9,6 +9,8 @@ slug: scripts-to-audiobook-journey
 permalink: /blog/scripts-to-audiobook-journey
 ---
 
+![Scripts to Audiobook](/images/scripts-to-audiobook-dark.png)
+
 # Scripts to Audiobook: An AI Coding Journey 🎧
 
 I'm a movie buff and an avid audiobook consumer. For a while, I'd been thinking: **what if I could automatically generate personalized audiobooks from AI-generated scripts?**

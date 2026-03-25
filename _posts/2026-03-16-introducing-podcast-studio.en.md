@@ -9,6 +9,8 @@ slug: introducing-podcast-studio
 permalink: /blog/introducing-podcast-studio
 ---
 
+![Podcast Studio](/images/podcast-studio-screenshot.png)
+
 # Introducing Podcast Studio: AI-Powered Podcast Generation 🎙️
 
 I'm excited to announce **Podcast Studio**, an AI-powered tool that transforms any topic into engaging, multi-speaker podcast episodes.

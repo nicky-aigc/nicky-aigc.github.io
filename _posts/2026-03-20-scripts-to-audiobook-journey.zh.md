@@ -9,6 +9,8 @@ slug: scripts-to-audiobook-journey
 permalink: /blog/zh/scripts-to-audiobook-journey
 ---
 
+![Scripts to Audiobook](/images/scripts-to-audiobook-dark.png)
+
 # Scripts to Audiobook：一段 AI 编码之旅 🎧
 
 我是个电影迷，也是有声书的重度消费者。有段时间我一直在想：**能不能从 AI 生成的脚本自动生成个性化的有声书？**
