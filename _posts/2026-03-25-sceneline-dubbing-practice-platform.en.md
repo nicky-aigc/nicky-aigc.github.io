@@ -130,6 +130,8 @@ MIT License — Fully open source, contributions welcome.
 - **GitHub**: [github.com/hugcosmos/SceneLine](https://github.com/hugcosmos/SceneLine)
 - **Online Demo**: (Coming soon)
 
+![SceneLine Home](/images/sceneline-home.png)
+
 ---
 
 If you're also learning languages or interested in AI + education, give it a try and share your feedback!
