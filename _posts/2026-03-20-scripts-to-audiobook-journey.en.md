@@ -117,4 +117,8 @@ But first, I'm taking a break. Shipping feels good. 😊
 
 **Check it out on GitHub:** [scripts-to-audiobook](https://github.com/hugcosmos/scripts-to-audiobook)
 
+## Discuss
+
+💬 [Join the discussion on GitHub](https://github.com/hugcosmos/hugcosmos.github.io/discussions/TODO)
+
 *Have questions or feedback? Reach out on [Twitter](https://twitter.com/hugcosmos) or [GitHub Discussions](https://github.com/hugcosmos/scripts-to-audiobook/discussions).*
