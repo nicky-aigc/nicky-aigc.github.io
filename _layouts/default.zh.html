@@ -164,7 +164,7 @@
                 <li><a href="{{ site.baseurl }}/projects.zh.html" {% if page.name == 'projects.zh.html' %}class="active"{% endif %}>项目</a></li>
                 <li><a href="{{ site.baseurl }}/about.zh.html" {% if page.name == 'about.zh.html' %}class="active"{% endif %}>关于我</a></li>
                 <li><a href="{{ site.baseurl }}/contact.zh.html" {% if page.name == 'contact.zh.html' %}class="active"{% endif %}>联系</a></li>
-                <li class="lang-switch-nav"><a href="{{ site.baseurl }}/">English</a></li>
+                <li class="lang-switch-nav"><a href="{{ site.baseurl }}/{% if page.name == 'blog.zh.html' %}blog.html{% elsif page.name == 'projects.zh.html' %}projects.html{% elsif page.name == 'about.zh.html' %}about.html{% elsif page.name == 'contact.zh.html' %}contact.html{% elsif page.name == 'ai-agents.zh.html' %}ai-agents.html{% else %}index.html{% endif %}">English</a></li>
             </ul>
         </div>
     </nav>
