@@ -9,7 +9,7 @@ slug: codemath-interactive-math-learning
 permalink: /blog/en/codemath-interactive-math-learning
 ---
 
-![CodeMath Homepage](https://codemath.pages.dev/)
+![CodeMath Homepage](/images/codemath-home.png)
 
 # CodeMath: An Interactive Math Learning Platform 🧮
 
