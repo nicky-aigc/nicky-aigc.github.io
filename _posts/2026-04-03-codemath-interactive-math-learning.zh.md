@@ -9,7 +9,7 @@ slug: codemath-interactive-math-learning
 permalink: /blog/zh/codemath-interactive-math-learning
 ---
 
-![CodeMath 首页](https://codemath.pages.dev/og-image.png)
+![CodeMath 首页](https://codemath.pages.dev/)
 
 # CodeMath：交互式数学学习平台 🧮
 
@@ -91,15 +91,9 @@ npm run build  # 构建生产版本
 npm run preview  # 预览生产构建
 ```
 
-## 部署
+## 在线演示
 
-CodeMath 部署在 **Cloudflare Pages** 上，提供：
-- ⚡ 全球 CDN
-- 🔄 从 GitHub 自动部署
-- 🌐 免费 SSL 证书
-- 📊 分析功能
-
-**在线演示**：[https://codemath.pages.dev/](https://codemath.pages.dev/)
+**立即体验**：[https://codemath.pages.dev/](https://codemath.pages.dev/)
 
 ## 项目结构
 
@@ -121,15 +115,6 @@ CodeMath/
 ├── README.md               # 项目说明
 └── tech-spec.md            # 技术规范
 ```
-
-## Cloudflare Pages 配置
-
-部署过程中的关键经验：
-
-1. **Build Command**（构建命令）：`npm run build`（在 `app/` 目录中运行）
-2. **Output Directory**（输出目录）：`app/dist`
-3. **vite.config.ts**：设置 `base: './'` 以正确加载资源
-4. **Root directory**（根目录）：留空（仓库根目录）
 
 ## 常见问题
 

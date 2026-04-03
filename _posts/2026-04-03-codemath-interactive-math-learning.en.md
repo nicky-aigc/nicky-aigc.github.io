@@ -9,7 +9,7 @@ slug: codemath-interactive-math-learning
 permalink: /blog/en/codemath-interactive-math-learning
 ---
 
-![CodeMath Homepage](https://codemath.pages.dev/og-image.png)
+![CodeMath Homepage](https://codemath.pages.dev/)
 
 # CodeMath: An Interactive Math Learning Platform 🧮
 
@@ -91,15 +91,9 @@ npm run build  # Build for production
 npm run preview  # Preview production build
 ```
 
-## Deployment
+## Live Demo
 
-CodeMath is deployed on **Cloudflare Pages**, providing:
-- ⚡ Global CDN
-- 🔄 Automatic deploys from GitHub
-- 🌐 Free SSL certificates
-- 📊 Analytics
-
-**Live Demo**: [https://codemath.pages.dev/](https://codemath.pages.dev/)
+**Try it online**: [https://codemath.pages.dev/](https://codemath.pages.dev/)
 
 ## Project Structure
 
@@ -121,15 +115,6 @@ CodeMath/
 ├── README.md               # Project README
 └── tech-spec.md            # Tech specification
 ```
-
-## Cloudflare Pages Configuration
-
-Key learnings from deployment:
-
-1. **Build Command**: `npm run build` (runs in `app/` directory)
-2. **Output Directory**: `app/dist`
-3. **vite.config.ts**: Set `base: './'` for proper asset loading
-4. **Root directory**: Leave empty (repo root)
 
 ## FAQ
 
