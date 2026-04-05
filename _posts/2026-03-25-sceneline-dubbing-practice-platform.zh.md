@@ -134,12 +134,5 @@ MIT License — 完全开源，欢迎贡献。
 
 ![SceneLine 首页](/images/sceneline-home.png)
 
-## 讨论
-
-💬 [在 GitHub 上参与讨论](https://github.com/hugcosmos/hugcosmos.github.io/discussions/TODO)
-
----
-
-如果你也在学习语言，或者对 AI + 教育感兴趣，欢迎试用和反馈！
 
 Made with 💙 by Nicky & AI

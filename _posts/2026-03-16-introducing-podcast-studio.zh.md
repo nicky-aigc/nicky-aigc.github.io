@@ -75,12 +75,5 @@ Podcast Studio 完全开源。在 GitHub 上查看：
 
 [github.com/hugcosmos/podcast-studio](https://github.com/hugcosmos/podcast-studio)
 
-## 讨论
 
-💬 [在 GitHub 上参与讨论](https://github.com/hugcosmos/hugcosmos.github.io/discussions/TODO)
-
----
-
-**准备好创建你的第一个 AI 生成播客了吗？**
-
-今天就安装它，把你的想法转化为引人入胜的音频内容！
+Made with 💙 by Nicky & AI

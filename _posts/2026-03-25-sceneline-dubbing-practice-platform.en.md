@@ -134,12 +134,5 @@ MIT License — Fully open source, contributions welcome.
 
 ![SceneLine Home](/images/sceneline-home.png)
 
-## Discuss
-
-💬 [Join the discussion on GitHub](https://github.com/hugcosmos/hugcosmos.github.io/discussions/TODO)
-
----
-
-If you're also learning languages or interested in AI + education, give it a try and share your feedback!
 
 Made with 💙 by Nicky & AI

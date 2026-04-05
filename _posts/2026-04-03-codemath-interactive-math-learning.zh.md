@@ -146,12 +146,5 @@ MIT License — 完全开源，欢迎贡献！
 - **GitHub**: [github.com/hugcosmos/CodeMath](https://github.com/hugcosmos/CodeMath)
 - **在线演示**: [https://codemath.pages.dev/](https://codemath.pages.dev/)
 
-## 讨论
-
-💬 [在 GitHub 上参与讨论](https://github.com/hugcosmos/CodeMath/discussions)
-
----
-
-如果你对数学教育、交互式学习感兴趣，或者只是想探索一些酷炫的可视化，不妨试试看！
 
 Made with 💙 by Nicky & AI

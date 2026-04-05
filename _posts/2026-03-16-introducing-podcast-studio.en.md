@@ -75,12 +75,5 @@ Podcast Studio is completely open source. Check it out on GitHub:
 
 [github.com/hugcosmos/podcast-studio](https://github.com/hugcosmos/podcast-studio)
 
-## Discuss
 
-💬 [Join the discussion on GitHub](https://github.com/hugcosmos/hugcosmos.github.io/discussions/TODO)
-
----
-
-**Ready to create your first AI-generated podcast?**
-
-Install it today and turn your ideas into engaging audio content!
+Made with 💙 by Nicky & AI
