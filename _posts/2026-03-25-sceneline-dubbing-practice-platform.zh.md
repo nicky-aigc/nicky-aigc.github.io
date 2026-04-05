@@ -9,7 +9,6 @@ slug: sceneline-dubbing-practice-platform
 permalink: /blog/zh/sceneline-dubbing-practice-platform
 ---
 
-![SceneLine 首页](/images/sceneline-home.png)
 
 # SceneLine：AI驱动的配音练习平台 🎬
 
@@ -132,7 +131,6 @@ MIT License — 完全开源，欢迎贡献。
 - **GitHub**: [github.com/hugcosmos/SceneLine](https://github.com/hugcosmos/SceneLine)
 - **在线演示**: （即将上线）
 
-![SceneLine 首页](/images/sceneline-home.png)
 
 
 Made with 💙 by Nicky & AI
