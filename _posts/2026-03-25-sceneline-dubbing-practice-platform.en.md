@@ -12,6 +12,8 @@ permalink: /blog/sceneline-dubbing-practice-platform
 
 # SceneLine: AI-Powered Dubbing Practice Platform 🎬
 
+![SceneLine Home](/images/sceneline-home.png)
+
 I recently released a new project called **SceneLine** — an AI-powered dubbing practice platform that enables language learners to practice dubbing through immersive film/TV scene dialogues.
 
 ## Why I Built This

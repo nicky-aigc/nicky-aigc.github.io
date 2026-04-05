@@ -12,6 +12,8 @@ permalink: /blog/zh/sceneline-dubbing-practice-platform
 
 # SceneLine：AI驱动的配音练习平台 🎬
 
+![SceneLine 首页](/images/sceneline-home.png)
+
 我最近发布了一个新项目 **SceneLine** — 一个 AI 驱动的配音练习平台，让语言学习者可以通过影视场景对话进行沉浸式配音训练。
 
 ## 为什么做这个？
