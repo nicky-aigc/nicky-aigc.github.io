@@ -129,7 +129,6 @@ MIT License — 完全开源，欢迎贡献。
 ## 链接
 
 - **GitHub**: [github.com/hugcosmos/SceneLine](https://github.com/hugcosmos/SceneLine)
-- **在线演示**: （即将上线）
 
 
 

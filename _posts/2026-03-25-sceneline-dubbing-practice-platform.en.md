@@ -129,7 +129,6 @@ MIT License — Fully open source, contributions welcome.
 ## Links
 
 - **GitHub**: [github.com/hugcosmos/SceneLine](https://github.com/hugcosmos/SceneLine)
-- **Online Demo**: (Coming soon)
 
 
 
