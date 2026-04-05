@@ -4,3 +4,8 @@ baseurl: ""
 url: "https://hugcosmos.github.io"
 
 markdown: kramdown
+
+# Enable GitHub Discussions for blog posts
+discussions:
+  enabled: true
+  category: general

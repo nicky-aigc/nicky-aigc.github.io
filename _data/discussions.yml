@@ -1,0 +1,17 @@
+# Blog Discussions 映射
+# 项目文章用 discussion_number 让 EN/ZH 共享同一 Giscus thread
+# General blog 留空用 pathname 自动创建
+
+posts:
+  codemath-interactive-math-learning:
+    discussion_number: 10
+    repo_discussions: "https://github.com/hugcosmos/CodeMath/discussions"
+  sceneline-dubbing-practice-platform:
+    discussion_number: 11
+    repo_discussions: "https://github.com/hugcosmos/SceneLine/discussions"
+  scripts-to-audiobook-journey:
+    discussion_number: 12
+    repo_discussions: "https://github.com/hugcosmos/scripts-to-audiobook/discussions"
+  introducing-podcast-studio:
+    discussion_number: 13
+    repo_discussions: "https://github.com/hugcosmos/podcast-studio/discussions"

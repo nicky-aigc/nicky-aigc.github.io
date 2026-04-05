@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    {% if page.name == "blog.html" %}
+    {% if page.name == "blog.zh.html" %}
     <style>
         .blog-section {
             max-width: 900px;
@@ -150,25 +150,21 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>Curiosity's Space</h1>
-            <p>Explore my projects, interests, and collections of AI agents</p>
+            <h1>好奇心空间</h1>
+            <p>探索我的项目、兴趣和 AI 智能体收藏</p>
         </div>
     </header>
 
     <nav class="main-nav">
         <div class="container">
             <ul>
-                <li><a href="{{ site.baseurl }}/" {% if page.layout == 'home' %}class="active"{% endif %}>Home</a></li>
-                <li><a href="{{ site.baseurl }}/blog.html" {% if page.name == 'blog.html' %}class="active"{% endif %}>Blog</a></li>
-                <li><a href="{{ site.baseurl }}/ai-agents.html" {% if page.name == 'ai-agents.html' %}class="active"{% endif %}>AI Agents</a></li>
-                <li><a href="{{ site.baseurl }}/projects.html" {% if page.name == 'projects.html' %}class="active"{% endif %}>Projects</a></li>
-                <li><a href="{{ site.baseurl }}/about.html" {% if page.name == 'about.html' %}class="active"{% endif %}>About Me</a></li>
-                <li><a href="{{ site.baseurl }}/contact.html" {% if page.name == 'contact.html' %}class="active"{% endif %}>Contact</a></li>
-                {% if page.lang == 'zh' %}
+                <li><a href="{{ site.baseurl }}/index.zh.html" {% if page.layout == 'home' %}class="active"{% endif %}>首页</a></li>
+                <li><a href="{{ site.baseurl }}/blog.zh.html" {% if page.name == 'blog.zh.html' %}class="active"{% endif %}>博客</a></li>
+                <li><a href="{{ site.baseurl }}/ai-agents.zh.html" {% if page.name == 'ai-agents.zh.html' %}class="active"{% endif %}>AI 智能体</a></li>
+                <li><a href="{{ site.baseurl }}/projects.zh.html" {% if page.name == 'projects.zh.html' %}class="active"{% endif %}>项目</a></li>
+                <li><a href="{{ site.baseurl }}/about.zh.html" {% if page.name == 'about.zh.html' %}class="active"{% endif %}>关于我</a></li>
+                <li><a href="{{ site.baseurl }}/contact.zh.html" {% if page.name == 'contact.zh.html' %}class="active"{% endif %}>联系</a></li>
                 <li class="lang-switch-nav"><a href="{{ site.baseurl }}/{% if page.name == 'blog.zh.html' %}blog.html{% elsif page.name == 'projects.zh.html' %}projects.html{% elsif page.name == 'about.zh.html' %}about.html{% elsif page.name == 'contact.zh.html' %}contact.html{% elsif page.name == 'ai-agents.zh.html' %}ai-agents.html{% else %}index.html{% endif %}">English</a></li>
-                {% else %}
-                <li class="lang-switch-nav"><a href="{{ site.baseurl }}/{% if page.name == 'blog.html' %}blog.zh.html{% elsif page.name == 'projects.html' %}projects.zh.html{% elsif page.name == 'about.html' %}about.zh.html{% elsif page.name == 'contact.html' %}contact.zh.html{% elsif page.name == 'ai-agents.html' %}ai-agents.zh.html{% else %}index.zh.html{% endif %}">中文</a></li>
-                {% endif %}
             </ul>
         </div>
     </nav>

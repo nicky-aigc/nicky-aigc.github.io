@@ -15,6 +15,13 @@ layout: default
                     {% endfor %}
                 </span>
                 {% endif %}
+                {% if page.slug %}
+                <span class="lang-switch">
+                    <a href="/blog/{{ page.slug }}" class="lang-link {% if page.lang == 'en' %}active{% endif %}">English</a>
+                    <span class="separator">|</span>
+                    <a href="/blog/zh/{{ page.slug }}" class="lang-link {% if page.lang == 'zh' %}active{% endif %}">中文</a>
+                </span>
+                {% endif %}
             </div>
         </div>
 
@@ -23,20 +30,75 @@ layout: default
         </div>
 
         <div class="post-navigation">
-            {% if page.previous %}
-            <a class="prev-post" href="{{ page.previous.url }}">
-                <i class="fas fa-arrow-left"></i> {{ page.previous.title }}
-            </a>
-            {% endif %}
-            {% if page.next %}
-            <a class="next-post" href="{{ page.next.url }}">
-                {{ page.next.title }} <i class="fas fa-arrow-right"></i>
-            </a>
+            {% assign same_lang_posts = site.posts | where: "lang", page.lang %}
+            {% assign current_index = nil %}
+            {% for p in same_lang_posts %}
+                {% if p.url == page.url %}
+                    {% assign current_index = forloop.index0 %}
+                {% endif %}
+            {% endfor %}
+            {% if current_index != nil %}
+                {% assign prev_index = current_index | minus: 1 %}
+                {% assign next_index = current_index | plus: 1 %}
+                {% if prev_index >= 0 %}
+                    {% assign prev_post = same_lang_posts[prev_index] %}
+                    <a class="prev-post" href="{{ prev_post.url }}">
+                        <i class="fas fa-arrow-left"></i> {{ prev_post.title }}
+                    </a>
+                {% endif %}
+                {% if next_index < same_lang_posts.size %}
+                    {% assign next_post = same_lang_posts[next_index] %}
+                    <a class="next-post" href="{{ next_post.url }}">
+                        {{ next_post.title }} <i class="fas fa-arrow-right"></i>
+                    </a>
+                {% endif %}
+            {% else %}
+                {% if page.previous %}
+                    <a class="prev-post" href="{{ page.previous.url }}">
+                        <i class="fas fa-arrow-left"></i> {{ page.previous.title }}
+                    </a>
+                {% endif %}
+                {% if page.next %}
+                    <a class="next-post" href="{{ page.next.url }}">
+                        {{ page.next.title }} <i class="fas fa-arrow-right"></i>
+                    </a>
+                {% endif %}
             {% endif %}
         </div>
 
+        <!-- Project discussion link -->
+        {% assign disc = site.data.discussions.posts[page.slug] %}
+        {% if disc %}
+        <div class="post-discussion-link">
+            {% if page.lang == 'zh' %}
+            <p>💬 <a href="{{ disc.repo_discussions }}" target="_blank" rel="noopener">前往 GitHub 项目讨论</a></p>
+            {% else %}
+            <p>💬 <a href="{{ disc.repo_discussions }}" target="_blank" rel="noopener">Discuss on GitHub</a></p>
+            {% endif %}
+        </div>
+        {% endif %}
+
         <!-- Giscus Comments -->
         <div class="comments-section">
+            {% assign disc = site.data.discussions.posts[page.slug] %}
+            {% if disc %}
+            <script src="https://giscus.app/client.js"
+                data-repo="hugcosmos/hugcosmos.github.io"
+                data-repo-id="R_kgDOO1usyA"
+                data-category="Announcements"
+                data-category-id="DIC_kwDOO1usyM4C4cbW"
+                data-mapping="number"
+                data-term="{{ disc.discussion_number }}"
+                data-strict="1"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="light"
+                data-lang="{{ page.lang | replace: 'zh', 'zh-CN' | default: 'en' }}"
+                crossorigin="anonymous"
+                async>
+            </script>
+            {% else %}
             <script src="https://giscus.app/client.js"
                 data-repo="hugcosmos/hugcosmos.github.io"
                 data-repo-id="R_kgDOO1usyA"
@@ -52,6 +114,7 @@ layout: default
                 crossorigin="anonymous"
                 async>
             </script>
+            {% endif %}
         </div>
     </div>
 </article>
@@ -95,6 +158,36 @@ layout: default
     border-radius: 15px;
     font-size: 0.85em;
     margin: 0 3px;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.lang-link {
+    color: #7b1fa2;
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+}
+
+.lang-link:hover {
+    background: rgba(123, 31, 162, 0.1);
+}
+
+.lang-link.active {
+    background: linear-gradient(135deg, #7b1fa2 0%, #9c4dcc 100%);
+    color: white;
+    font-weight: 500;
+}
+
+.separator {
+    margin: 0 5px;
+    color: #7b1fa2;
 }
 
 .post-content {
@@ -203,6 +296,29 @@ layout: default
 
 .next-post {
     text-align: right;
+}
+
+.post-discussion-link {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    background: rgba(123, 31, 162, 0.05);
+    border-radius: 8px;
+}
+
+.post-discussion-link p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.post-discussion-link a {
+    color: #4a148c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.post-discussion-link a:hover {
+    text-decoration: underline;
 }
 
 .comments-section {

@@ -4,7 +4,12 @@ title: "Introducing Podcast Studio: AI-Powered Podcast Generation"
 date: 2026-03-16 00:00:00 +0800
 tags: [AI, podcast, typescript, open-source]
 excerpt: "Turn any topic into a multi-speaker, news-grounded podcast episode with natural conversations and lifelike voices."
+lang: en
+slug: introducing-podcast-studio
+permalink: /blog/introducing-podcast-studio
 ---
+
+![Podcast Studio](/images/podcast-studio-screenshot.png)
 
 # Introducing Podcast Studio: AI-Powered Podcast Generation 🎙️
 
@@ -70,8 +75,5 @@ Podcast Studio is completely open source. Check it out on GitHub:
 
 [github.com/hugcosmos/podcast-studio](https://github.com/hugcosmos/podcast-studio)
 
----
 
-**Ready to create your first AI-generated podcast?** 
-
-Install it today and turn your ideas into engaging audio content!
+Made with 💙 by Nicky & AI
